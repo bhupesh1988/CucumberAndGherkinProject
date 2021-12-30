@@ -24,10 +24,6 @@ public class BillingAddress extends ShippingCart{
         sendKeyText(_phoneNumber,loadProp.getProperty("phoneNumber"));
         // user click on the billing button
         click(_billingButton);
-//        sendKeyText(By.id("BillingNewAddress_City"),"Navsari");
-//        sendKeyText(By.id("BillingNewAddress_Address1"),"AAT Paras Faliya");
-//        sendKeyText(By.id("BillingNewAddress_ZipPostalCode"),"396403");
-//        sendKeyText(By.id("BillingNewAddress_PhoneNumber"), "1234567891");
-//        click(By.xpath("//*[@id=\"billing-buttons-container\"]/button[4]"));
+
     }
 }

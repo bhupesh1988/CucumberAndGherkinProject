@@ -36,11 +36,5 @@ public class BuildYourOwnComputerPage extends HomePage{
         click(_totalCommander);
         // user click add to card button
         click(_addToCart);
-
-//        click(By.id("product_attribute_3_6"));
-//        click(By.xpath("//*[@id=\"product_attribute_4_9\"]"));
-//        click(By.id("product_attribute_5_11"));
-//        click(By.id("product_attribute_5_12"));
-//        click(By.id("add-to-cart-button-1"));
     }
 }

@@ -31,7 +31,7 @@ public class BrowserManager extends BaseTest{
     public void closeBrowser()
     {
         // Close The Browser
-        //driver.close();
+        driver.close();
     }
 }
 

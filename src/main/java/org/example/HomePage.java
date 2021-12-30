@@ -98,59 +98,5 @@ public class HomePage extends Utils{
         System.out.println(loadProp.getProperty("blue"));
         // user verify after hover colour
         Assert.assertTrue(b.equals(loadProp.getProperty("blue")));
-
-
-    }
-
-    public void aftermouserhover(){
-        WebElement element = driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-        String e= element.getCssValue("color");
-        System.out.println("beforHover" +e);
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element).build().perform();
-        WebElement element1= driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-        String b= element1.getCssValue("color");
-        System.out.println("afterHover" +b);
-        System.out.println(loadProp.getProperty("blue"));
-        Assert.assertTrue(b.equals(loadProp.getProperty("blue")));
-
-
-    }
-    public static void main(String[] args) {
-        LoadProp loadProp=new LoadProp();
-        System.setProperty("webdriver.chrome.driver", "src/test/java/driver/chromedriver.exe");
-        WebDriver driver=new ChromeDriver();
-        driver.get("https://demo.nopcommerce.com/");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-        WebElement colr = driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-               String e=colr.getCssValue("color");
-        System.out.println("befor" +e);
-        Actions actions = new Actions(driver);
-        actions.moveToElement(colr).build().perform();
-        WebElement AfterHaver= driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-        String b= colr .getCssValue("color");
-        System.out.println("After" +b);
-//        System.out.println(loadProp.getProperty("blue"));
-//        Assert.assertTrue(b.equals(loadProp.getProperty("blue")));
-//        Assert.assertTrue(e.equals(b));
-
-//        System.out.println(bckgclr);
-//        driver.close();
-//        System.setProperty("webdriver.chrome.driver", "src/test/java/driver/chromedriver.exe");
-//        driver=new ChromeDriver();
-//        driver.get("https://demo.nopcommerce.com/");
-//        WebElement E = driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-//        String color1 = E.getCssValue("background-color");
-//        System.out.println(color1);
-
-    }
-
-    public void backgrougcolor(){
-        WebElement E = driver.findElement(By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a"));
-        String color1 = E.getCssValue("background-color");
-        System.out.println(color1);
-
     }
 }
