@@ -6,6 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +15,9 @@ import java.util.Date;
 
 public class Utils extends BrowserManager {
     LoadProp loadProp=new LoadProp();
-
+    public static String getMyUrl1() {
+        return driver.getCurrentUrl();
+    }
 
     public static void click(By by){
         driver.findElement(by).click();

@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BrowserManager extends BaseTest{
     LoadProp loadProp=new LoadProp();
     // Select The Browser
-    String browserName = "firefox";
+    String browserName = "chrome";
     //String browserName= System.getProperty("browser");
 
     public void openBrowser() {
