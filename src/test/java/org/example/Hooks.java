@@ -20,5 +20,6 @@ public class Hooks extends Utils {
             scenario.attach(screenshot,"image/png","My screenShot");
 
         }
+        browserManager.closeBrowser();
     }
 }
